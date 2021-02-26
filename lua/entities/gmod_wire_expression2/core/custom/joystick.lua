@@ -5,14 +5,9 @@
 ]]--
 
 
-E2Lib.RegisterExtension( "joystick", true )
+E2Lib.RegisterExtension( "joystick", false )
 
 local joystickdata = {}
-
-util.AddNetworkString("E2_joystick_sendstream")
-util.AddNetworkString("E2_joystick_setstream")
-util.AddNetworkString("E2_joystick_getdata")
-util.AddNetworkString("E2_joystick_senddata")
 
 net.Receive("E2_joystick_sendstream",function(u,ply)
 	if joystickdata[ply] and joystickdata[ply].active_joystick then 
