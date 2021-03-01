@@ -1,7 +1,6 @@
 AddCSLuaFile("autorun/joyserializer.lua")
 AddCSLuaFile("autorun/client/joystick.lua")
 AddCSLuaFile("autorun/client/joynet.lua")
-AddCSLuaFile("autorun/client/joyexample.lua")
 AddCSLuaFile("autorun/client/joyenum.lua")
 AddCSLuaFile("autorun/client/joyconfig.lua")
 
